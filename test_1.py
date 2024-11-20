@@ -11,7 +11,7 @@ class TestGetAreaRectangle(unittest.TestCase):
     self.rectangle.set_height(2)
     self.assertionEqual(self.rectangle.get_area(), 6, "incorrect area")
 
-  def test_normal_case(self):
+  def test_negative_case(self):
     self.rectangle.set_width(-1)
     self.rectangle.set_height(2)
     self.assertionEqual(self.rectangle.get_area(), -1, "incorrect area")
